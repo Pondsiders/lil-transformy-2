@@ -1,0 +1,9 @@
+# The extras a RunPod PyTorch 2.8 image needs to run these notebooks.
+# (torch, numpy, and Jupyter are already in the image.)
+#
+#   pip install -r requirements.txt
+
+datasets>=5,<6
+matplotlib>=3.9
+tokenizers>=0.23
+transformers>=5,<6

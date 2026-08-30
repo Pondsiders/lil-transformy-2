@@ -14,3 +14,6 @@ artifacts/
 
 # macOS
 .DS_Store
+
+# One-off experiment copies
+scratch-*

@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Scratch / reference files
+pip-list*.txt
+
+# Artifacts — notebooks write these; decide per-artifact what gets committed
+artifacts/
+
+# macOS
+.DS_Store

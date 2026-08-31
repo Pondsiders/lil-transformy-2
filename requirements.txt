@@ -1,9 +1,14 @@
-# The extras a RunPod PyTorch 2.8 image needs to run these notebooks.
-# (torch, numpy, and Jupyter are already in the image.)
+# Everything the notebooks need. On a stock PyTorch 2.8 pod image most of
+# this is already installed, and pip will just nod along ("already satisfied").
 #
-#   pip install -r requirements.txt
+#   uv venv && uv pip install -r requirements.txt      # laptop
+#   pip install -r requirements.txt                    # rented GPU
 
+torch>=2.8
+numpy>=2.1,<3
 datasets>=5,<6
-matplotlib>=3.9
 tokenizers>=0.23
 transformers>=5,<6
+matplotlib>=3.9
+tqdm
+ipykernel
